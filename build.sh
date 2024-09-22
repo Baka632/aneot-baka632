@@ -11,5 +11,5 @@ npm -v
 
 echo "Preparing to build site..."
 rm -rf node_modules
-pnpm install
-pnpm run docs:build
+npm install
+npm run docs:build
