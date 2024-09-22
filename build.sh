@@ -9,7 +9,11 @@ echo "Node and NPM version"
 node -v
 npm -v
 
+echo "Reinstall PNPM"
+npm uninstall -g pnpm
+npm install -g pnpm
+
 echo "Preparing to build site..."
 rm -rf node_modules
-npm install
-npm run docs:build
+pnpm install
+pnpm run docs:build
