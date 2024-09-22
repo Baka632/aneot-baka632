@@ -1,9 +1,5 @@
 #!/bin/sh
-curl -sSL https://deb.nodesource.com/setup_20.x > setup_nodejs_20.x.sh
-chmod +x setup_nodejs_20.x.sh
-./setup_nodejs_20.x.sh
-sudo apt-get install -y nodejs
-node -v
-npm install -g pnpm
+brew install node@20
+
 pnpm install
-pnpm run build
+pnpm run docs:build
