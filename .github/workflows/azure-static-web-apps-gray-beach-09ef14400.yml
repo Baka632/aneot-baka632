@@ -19,10 +19,8 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Preparing to install NPM
-        run: chmod 777 ./build.sh & ./build.sh +x ./build.sh
       - name: Install NPM
-        run: ./build.sh
+        run: bash build.sh
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
